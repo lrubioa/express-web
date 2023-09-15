@@ -7,7 +7,7 @@ app.use(express.static('./public/images'))
 // app.engine('ejs', require('ejs'))
 
 app.set('views', './views');
-// app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('index', {text: 'This is EJS'});
